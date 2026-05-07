@@ -5,3 +5,8 @@ I messed up and forgot about forking the repository and I had another github rep
 - Looked at printPath for a while and traced through it on paper with a small example
 - Basically it walks backward from the exit to the entrance using those arrays so it needs both the row AND column of where you came from, thats why theres two of them
 - Ok makes sense now
+
+2nd Entry
+- Started writing the dfs function signature and got a compile error right away
+- Something about discards qualifiers, i passed maze as a regular reference but it needed to be const
+- Fixed it, maze is const because dfs only reads it, the other three (visited, parent_r, parent_c) need to be regular references because dfs actually writes to them
