@@ -23,3 +23,18 @@ I messed up and forgot about forking the repository and I had another github rep
 - Printed out the parent_r grid after dfs finished and the exit cell still had -1 in it
 - Realized i was setting parent_r[nr][nc] = r AFTER the recursive call came back, which is too late
 - Moved it to before the recursive call, now it works
+
+5th Entry
+- Maze printed fine but nothing else showed up, no path no message nothing
+- Stared at it for a bit then realized the dfs call in main was still commented out lol
+- Uncommented it and it ran
+
+6th Entry
+- dfs was running but still no output after the maze
+- The if (found) block was still commented out too
+- Uncommented the whole if/else block and now both cases work, either prints the path or prints no path exists
+
+7th Entry
+- Ran it a bunch of times with different sizes to make sure everything was good
+- Checked that the path output actually made sense by tracing it on the printed maze
+- Both cases (path found and no path) are working correctly
