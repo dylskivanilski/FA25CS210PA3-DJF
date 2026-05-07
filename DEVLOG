@@ -17,3 +17,9 @@ I messed up and forgot about forking the repository and I had another github rep
 - dfs was going to a neighbor, that neighbor went back, back and forth foreve
 - Forgot to mark the cell as visited so it kept revisiting the same ones
 - Added visited[r][c] = true and the crash went away
+
+4th Entry
+- No more crash but printPath was printing (-1, -1) over and over and the program just hung
+- Printed out the parent_r grid after dfs finished and the exit cell still had -1 in it
+- Realized i was setting parent_r[nr][nc] = r AFTER the recursive call came back, which is too late
+- Moved it to before the recursive call, now it works
