@@ -10,3 +10,10 @@ I messed up and forgot about forking the repository and I had another github rep
 - Started writing the dfs function signature and got a compile error right away
 - Something about discards qualifiers, i passed maze as a regular reference but it needed to be const
 - Fixed it, maze is const because dfs only reads it, the other three (visited, parent_r, parent_c) need to be regular references because dfs actually writes to them
+
+3rd Entry
+- Program compiles but crashes instantly with segmentation fault
+- Added some print statements to see what r and c were and it was just printing the same coordinates over and over thousands of times
+- dfs was going to a neighbor, that neighbor went back, back and forth foreve
+- Forgot to mark the cell as visited so it kept revisiting the same ones
+- Added visited[r][c] = true and the crash went away
