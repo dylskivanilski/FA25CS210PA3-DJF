@@ -1,0 +1,7 @@
+I messed up and forgot about forking the repository and I had another github repository I worked on so I'll just post my entries one by one
+1st Entry
+- Got the starter code and read through it
+- Was confused about why there are two separate arrays for parent_r and parent_c, why not just one
+- Looked at printPath for a while and traced through it on paper with a small example
+- Basically it walks backward from the exit to the entrance using those arrays so it needs both the row AND column of where you came from, thats why theres two of them
+- Ok makes sense now
